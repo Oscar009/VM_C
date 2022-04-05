@@ -1,9 +1,12 @@
 #include "component.h"
 
-component::component(){
-    std::cout << "Hello desde component";
+component::component()
+{
+    cout << "Hello desde constructor" << endl;
 }
 
-void component::showHello(){
-    std::cout << "Hello desde component";
+void component::showHello(string msj)
+{
+    cout << msj << endl;
+    system("ls");
 }

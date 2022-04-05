@@ -1,11 +1,7 @@
-#include <iostream>
-#include "component.h"
+#include "virtual_machine.h"
 
-int main(){
-
-    component* c = new component();
-
-    c->showHello();
-
-    return 0;
+virtual_machine::virtual_machine(string msj)
+{
+    c = new component();
+    c->showHello(msj);
 }

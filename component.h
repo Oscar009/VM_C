@@ -2,13 +2,17 @@
 #define component_h
 
 #include <iostream>
+#include <string>
 
-class component{
+using namespace std;
+
+class component
+{
 public:
     component();
-    ~component(){}
+    ~component() {}
 
-    void showHello();
+    void showHello(string);
 };
 
 #endif
