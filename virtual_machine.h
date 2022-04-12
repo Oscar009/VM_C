@@ -14,7 +14,7 @@ class virtual_machine
     component *c;
 
 public:
-    virtual_machine(string);
+    virtual_machine(string, string, string, string, string, string, string);
     ~virtual_machine() {}
 };
 

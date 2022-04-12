@@ -6,7 +6,7 @@
 int main(int argc, char *argv[])
 {
 
-    virtual_machine(*(argv + 1));
+    virtual_machine(*(argv + 1), *(argv + 2), *(argv + 3), *(argv + 4), *(argv + 5), *(argv + 6), *(argv + 7));
 
     return 0;
 }
