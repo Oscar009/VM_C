@@ -18,8 +18,8 @@ public:
     void createStorage(string, string);
     void createSataController(string);
     void configIDEController(string, string);
-    /* Metodo de listar la configuracion de la VM */
-    /* Metodo iniciar VM */
+    void listConfig(string);
+    void startVM(string);
 };
 
 #endif

@@ -8,4 +8,6 @@ virtual_machine::virtual_machine(string name, string ostype, string cpus, string
     c->createStorage(name, storage);
     c->createSataController(name);
     c->configIDEController(name, isoRoute);
+    c->listConfig(name);
+    c->startVM(name);
 }
