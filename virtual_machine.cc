@@ -1,6 +1,6 @@
 #include "virtual_machine.h"
 
-virtual_machine::virtual_machine(string name, string ostype, string cpus, string memoryRam, string vram, string storage, string isoRoute)
+virtual_machine::virtual_machine(string name, string ostype, string cpus, string memoryRam, string vram, string storage, string isoRoute, string search)
 {
     c = new component();
     c->createVM(name, ostype);
@@ -8,6 +8,6 @@ virtual_machine::virtual_machine(string name, string ostype, string cpus, string
     c->createStorage(name, storage);
     c->createSataController(name);
     c->configIDEController(name, isoRoute);
-    c->listConfig(name);
+    c->listConfig(name, search);
     c->startVM(name);
 }

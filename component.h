@@ -18,7 +18,7 @@ public:
     void createStorage(string, string);
     void createSataController(string);
     void configIDEController(string, string);
-    void listConfig(string);
+    void listConfig(string, string);
     void startVM(string);
 };
 

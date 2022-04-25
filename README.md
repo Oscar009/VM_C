@@ -12,9 +12,9 @@ g++ component.cc main.cc virtual_machine.cc -o a.out
 
 Fill in the fields for the VM configuration.
 
-./a.out \[nameVM\] \[ostypeVM\] \[numberOfCpus\] \[numberOfRamMemory\] \[numberOfVideoMemory\] \[numberForDiskSpace\] \[isoRoute\]
+./a.out \[nameVM\] \[ostypeVM\] \[numberOfCpus\] \[numberOfRamMemory\] \[numberOfVideoMemory\] \[numberForDiskSpace\] \[isoRoute\] \[AtrributeToSearch\] 
 
 For example:
 ```
-./a.out Ubuntu_linux Ubuntu_64 2 2048 12 20480 ~/Escritorio/ubuntu-20.04.4-desktop-amd64.iso
+./a.out Ubuntu_linux Ubuntu_64 2 2048 12 20480 ~/Escritorio/ubuntu-20.04.4-desktop-amd64.iso Memory
 ```

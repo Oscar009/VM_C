@@ -116,7 +116,7 @@ void component::configIDEController(string name, string isoRoute)
     command = str.c_str();
     system(command);
 }
-void component::listConfig(string name)
+void component::listConfig(string name, string search)
 {
     cout << "Listing VM info..." << endl;
     int delay = 3;
@@ -139,7 +139,7 @@ void component::listConfig(string name)
 
     while (clock() - now < delay)
         ;
-    str = "VBoxManage showvminfo '" + name + "' | grep 'Memory'";
+    str = "VBoxManage showvminfo '" + name + "' | grep '"+ search+"'";
     command = str.c_str();
     system(command);
 }
